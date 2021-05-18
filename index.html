@@ -4,10 +4,138 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My page</title>
+    <title>Table</title>
+
+    <style type="text/css">
+      body {
+        background-color: #eeffff;
+      }
+
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30%;
+        border-collapse: collapse;
+        border-radius: 1em 1em 0 0;
+        overflow: hidden;
+        box-shadow: 1px 1px 15px -2px rgb(165, 165, 165);
+      }
+
+      td,
+      th {
+        width: 100px;
+      }
+
+      .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      .tg td {
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+        padding: 10px 5px;
+        word-break: normal;
+      }
+
+      .tg th {
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 5px;
+        word-break: normal;
+      }
+
+      .tg .tg-maa5 {
+        background-color: #eeffff;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .tg .tg-0tr6 {
+        background-color: #eeffff;
+        color: #16474a;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .tg .tg-qpj2 {
+        background-color: #118c9c;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .tg .tg-7c1g {
+        background-color: #1c314f;
+        color: #5f799c;
+        text-align: center;
+        vertical-align: top;
+        font-weight: bold;
+      }
+
+      .tg .tg-tf6j {
+        background-color: #cdcdcd;
+        color: #16474a;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .tg .tg-tf6j:first-child {
+        font-weight: bold;
+      }
+
+      .tg .tg-0tr6:first-child {
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <h1>Testing</h1>
-    <p>In page</p>
+    <table class="tg">
+      <thead>
+        <tr class="radius">
+          <th class="tg-maa5" rowspan="2"></th>
+          <th class="tg-qpj2" colspan="2">Apple</th>
+          <th class="tg-qpj2" colspan="2">Samsung</th>
+        </tr>
+        <tr>
+          <td class="tg-7c1g">Produced</td>
+          <td class="tg-7c1g">Sold</td>
+          <td class="tg-7c1g">Produced</td>
+          <td class="tg-7c1g">Sold</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-0tr6">Monitor</td>
+          <td class="tg-0tr6">50.000</td>
+          <td class="tg-0tr6">30.000</td>
+          <td class="tg-0tr6">100.000</td>
+          <td class="tg-0tr6">80.000</td>
+        </tr>
+        <tr>
+          <td class="tg-tf6j">Phones</td>
+          <td class="tg-tf6j">10.000</td>
+          <td class="tg-tf6j">5.000</td>
+          <td class="tg-tf6j">12.000</td>
+          <td class="tg-tf6j">8.000</td>
+        </tr>
+        <tr>
+          <td class="tg-0tr6">Laptops</td>
+          <td class="tg-0tr6">10.000</td>
+          <td class="tg-0tr6">7.000</td>
+          <td class="tg-0tr6">5.000</td>
+          <td class="tg-0tr6">12.000</td>
+        </tr>
+        <tr>
+          <td class="tg-tf6j">Other Stuff</td>
+          <td class="tg-tf6j">12.000</td>
+          <td class="tg-tf6j">9.000</td>
+          <td class="tg-tf6j">5.000</td>
+          <td class="tg-tf6j">9.000</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
