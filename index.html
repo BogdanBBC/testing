@@ -4,133 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
-
-    <style type="text/css">
-      body {
-        background-color: #eeffff;
-      }
-
-      table {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10%;
-        border-collapse: collapse;
-        border-radius: 1em 1em 0 0;
-        overflow: hidden;
-        box-shadow: 1px 1px 15px -2px rgb(165, 165, 165);
-      }
-
-      td,
-      th {
-        width: 100px;
-      }
-
-      .tg td {
-        font-family: Arial, sans-serif;
-        font-size: 1em;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg th {
-        font-family: Arial, sans-serif;
-        font-size: 1em;
-        font-weight: bold;
-        padding: 10px 5px;
-        word-break: normal;
-      }
-
-      .tg .tg-maa5 {
-        background-color: #eeffff;
-        color: #ffffff;
-        text-align: center;
-        vertical-align: top;
-      }
-
-      .tg .tg-0tr6 {
-        background-color: #eeffff;
-        color: #16474a;
-        text-align: center;
-        vertical-align: top;
-      }
-
-      .tg .tg-qpj2 {
-        background-color: #118c9c;
-        color: #ffffff;
-        text-align: center;
-        vertical-align: top;
-      }
-
-      .tg .tg-7c1g {
-        background-color: #1c314f;
-        color: #5f799c;
-        text-align: center;
-        vertical-align: top;
-        font-weight: bold;
-      }
-
-      .tg .tg-tf6j {
-        background-color: #cdcdcd;
-        color: #16474a;
-        text-align: center;
-        vertical-align: top;
-      }
-
-      .tg .tg-tf6j:first-child {
-        font-weight: bold;
-      }
-
-      .tg .tg-0tr6:first-child {
-        font-weight: bold;
-      }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <table class="tg">
-      <thead>
-        <tr class="radius">
-          <th class="tg-maa5" rowspan="2"></th>
-          <th class="tg-qpj2" colspan="2">Apple</th>
-          <th class="tg-qpj2" colspan="2">Samsung</th>
-        </tr>
-        <tr>
-          <td class="tg-7c1g">Produced</td>
-          <td class="tg-7c1g">Sold</td>
-          <td class="tg-7c1g">Produced</td>
-          <td class="tg-7c1g">Sold</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="tg-0tr6">Monitor</td>
-          <td class="tg-0tr6">50.000</td>
-          <td class="tg-0tr6">30.000</td>
-          <td class="tg-0tr6">100.000</td>
-          <td class="tg-0tr6">80.000</td>
-        </tr>
-        <tr>
-          <td class="tg-tf6j">Phones</td>
-          <td class="tg-tf6j">10.000</td>
-          <td class="tg-tf6j">5.000</td>
-          <td class="tg-tf6j">12.000</td>
-          <td class="tg-tf6j">8.000</td>
-        </tr>
-        <tr>
-          <td class="tg-0tr6">Laptops</td>
-          <td class="tg-0tr6">10.000</td>
-          <td class="tg-0tr6">7.000</td>
-          <td class="tg-0tr6">5.000</td>
-          <td class="tg-0tr6">12.000</td>
-        </tr>
-        <tr>
-          <td class="tg-tf6j">Other Stuff</td>
-          <td class="tg-tf6j">12.000</td>
-          <td class="tg-tf6j">9.000</td>
-          <td class="tg-tf6j">5.000</td>
-          <td class="tg-tf6j">9.000</td>
-        </tr>
-      </tbody>
-    </table>
+    <header class="bg">
+      <div class="top-bg">
+        <div class="logo"><img src="/images/logo.png" alt="logo" /></div>
+      </div>
+      <div class="banner">
+        <h1 class="bg-h">
+          Truth, Justice <br />
+          <span class="banner-slogan"> "The American Way"</span>
+        </h1>
+      </div>
+    </header>
+    <nav class="navbar sticky">
+      <div class="nav-wrap">
+        <ul>
+          <li><a href="">Join the club</a></li>
+          <li><a href="">Latest News</a></li>
+          <li><a href="">Watch Trailer</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main-content-bg">
+      <main class="main-content">
+        <article>
+          <h2 class="redded">Welcome to the Superman Super Site</h2>
+          <p>
+            Superman is the brainchild of Jerry Siegel and Joe Shuster who first
+            envisioned the character in 1932 and later had his first appearance
+            in Action Comics #1 in June 1938. What Jerry and Joe did not know at
+            the time was that they had created a character that would become the
+            signature icon of DC Comics and the most universally recognized hero
+            in human history.
+          </p>
+        </article>
+        <h2 class="redded">We continue the story</h2>
+        <article class="showcase">
+          <section class="content-img">
+            <img class="desaturate" src="images/picone.jpg" alt="one" />
+            <p class="content-img-text">
+              It is a mission we are proud to maintain for all the fellow
+              Superman fans of the world and everyone who visits our site
+              because, without you, we would not exist.
+            </p>
+          </section>
+          <section class="content-img">
+            <img class="desaturate" src="images/pictwo.jpg" alt="one" />
+            <p class="content-img-text">
+              Since 1998, the Superman Super Site's mission statement has been
+              to bring you all the latest news, updates, and information
+              pertaining to the Man of Steel and the Superman universe in
+              general.
+            </p>
+          </section>
+          <section class="content-img">
+            <img class="desaturate" src="images/pictree.jpg" alt="one" />
+            <p class="content-img-text">
+              Since 1938, the character of Superman/Clark Kent has appeared in
+              every imaginable media form including television, film,
+              novelizations, and even a Broadway show.
+            </p>
+          </section>
+        </article>
+        <section>
+          <article class="release">
+            <h3>Release Date?</h3>
+            <p>https://www.imdb.com/title/tt0770828/</p>
+            <form>
+              <div>
+                <label for="email-input"></label><br />
+                <input
+                  id="email-input"
+                  type="email"
+                  name="email-inputted"
+                  placeholder="Enter your E-mail Adress here!"
+                  maxlength="255"
+                />
+              </div>
+            </form>
+          </article>
+        </section>
+      </main>
+    </div>
+    <footer>
+      Superman and all related items are copyright © by Warner Bros. and DC
+      Comics.
+    </footer>
+    <script src="scroll-out.js"></script>
+    <script type="text/javascript">
+      ScrollOut({
+        targets: '.top-bg , .navbar, .sticky',
+      });
+    </script>
   </body>
 </html>
