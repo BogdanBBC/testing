@@ -241,15 +241,14 @@ p.content-img-text {
 }
 
 input {
-  color: gray;
-  border-radius: 25px;
-  border: 1px solid #e0e0e0;
+  color: rgb(255, 255, 255);
+  border: 1px solid #ffffff;
   padding: 15px;
-  background-color: #fafafa;
+  background-color: #770000;
   border: 0;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   font-size: 1rem;
-  width: 30%;
+  width: 40%;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -258,6 +257,7 @@ input:focus {
   background-color: #ffffff;
   border-color: #000;
   outline: none;
+  color: #afafaf;
 }
 
 footer {
@@ -352,7 +352,7 @@ footer {
   animation-delay: 24s;
 }
 
-@media screen and (max-width: 616px) {
+@media screen and (max-width: 720px) {
   .release {
     padding: 1px;
   }
@@ -429,5 +429,9 @@ footer {
 
   .banner hr {
     display: none;
+  }
+  input {
+    width: 90%;
+    margin-bottom: 2rem;
   }
 }
