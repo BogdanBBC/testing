@@ -241,8 +241,8 @@ p.content-img-text {
 }
 
 input {
-  color: rgb(255, 255, 255);
-  border: 1px solid #ffffff;
+  color: white;
+  border: 1px solid #e0e0e0;
   padding: 15px;
   background-color: #770000;
   border: 0;
@@ -257,7 +257,7 @@ input:focus {
   background-color: #ffffff;
   border-color: #000;
   outline: none;
-  color: #ffffff;
+  color: #afafaf;
 }
 
 footer {
