@@ -78,7 +78,6 @@ h1.bg-h {
 .logo {
   margin: 0 auto;
   width: 93px;
-  height: 71px;
 }
 
 .logo img {
@@ -353,6 +352,60 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
+  footer {
+    display: none;
+  }
+
+  .top-bg {
+    height: 50px;
+  }
+
+  .logo img {
+    height: 50px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .navbar li a {
+    font-size: 1.2rem;
+    color: #fdc000;
+    display: block;
+    padding-top: 6px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.4s ease;
+  }
+
+  .navbar a::after {
+    content: '';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+    height: 2px;
+    width: 0px;
+    background-color: #fdc000;
+  }
+
+  .navbar a.active::after {
+    content: '';
+    display: block;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2px;
+    width: 100px;
+    background-color: #fdc000;
+  }
+
+  .sticky {
+    top: 50px;
+  }
+
   .release {
     padding: 1px;
   }
@@ -423,7 +476,7 @@ footer {
   }
 
   span.banner-slogan {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
   }
 
