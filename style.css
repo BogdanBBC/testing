@@ -50,7 +50,7 @@ h2::after {
   color: white;
   position: absolute;
   margin: 10px 10px 0 20px;
-  left: 48%;
+  left: calc(50% - 50px);
   top: 0;
 }
 
