@@ -41,9 +41,12 @@ h2::after {
   background-attachment: fixed;
   clip-path: circle(60px at 50% -15px);
   transition: all 0.5s linear;
-  color: white;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   cursor: pointer;
+}
+
+.circle p {
+  color: white;
 }
 
 .circle:after {
