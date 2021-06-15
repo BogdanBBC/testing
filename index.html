@@ -4,118 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+    <title>Animations</title>
   </head>
   <body>
-    <header class="bg">
-      <div class="top-bg">
-        <div class="logo">
-          <a href=""
-            ><img class="shadowfilter" src="images/logo.png" alt="logo"
-          /></a>
-        </div>
+    <div class="circle blue"><p>welcome to the party!</p></div>
+    <nav>
+      <h2>bb</h2>
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
-      <div class="banner">
-        <img src="images/1.jpg" alt="" /><img src="images/2.jpg" alt="" /><img
-          src="images/3.jpg"
-          alt=""
-        /><img src="images/4.jpg" alt="" /><img src="images/5.jpg" alt="" />
-        <h1 class="bg-h">
-          <hr />
-          Truth, Justice <br />
-          <span class="banner-slogan"> "The American Way"</span>
-        </h1>
-      </div>
-    </header>
-    <nav class="navbar sticky">
-      <div class="nav-wrap">
-        <ul>
-          <li><a class="active" href="">Join the club</a></li>
-          <li><a href="">Latest News</a></li>
-          <li><a href="">Watch Trailer</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </div>
+      <ul>
+        <li class="btn link"><i class="fa fa-home"></i>Home</li>
+        <li class="btn link"><i class="fa fa-user"></i>About Me</li>
+        <li class="btn link"><i class="fa fa-clone"></i>Services</li>
+      </ul>
     </nav>
-    <div class="main-content-bg">
-      <main class="main-content">
-        <article>
-          <h2 class="redded">Welcome to the Superman Super Site</h2>
-          <p>
-            Superman is the brainchild of Jerry Siegel and Joe Shuster who first
-            envisioned the character in 1932 and later had his first appearance
-            in Action Comics #1 in June 1938. What Jerry and Joe did not know at
-            the time was that they had created a character that would become the
-            signature icon of DC Comics and the most universally recognized hero
-            in human history.
-          </p>
-        </article>
-        <h2 class="redded">We continue the story</h2>
-        <article class="showcase">
-          <section class="content-img">
-            <hr />
-            <img class="desaturate" src="images/picone.jpg" alt="one" />
-            <p class="content-img-text">
-              It is a mission we are proud to maintain for all the fellow
-              Superman fans of the world and everyone who visits our site
-              because, without you, we would not exist.
-            </p>
-          </section>
-          <section class="content-img">
-            <hr />
-            <img class="desaturate" src="images/pictwo.jpg" alt="one" />
-            <p class="content-img-text">
-              Since 1998, the Superman Super Site's mission statement has been
-              to bring you all the latest news, updates, and information
-              pertaining to the Man of Steel and the Superman universe in
-              general.
-            </p>
-          </section>
-          <section class="content-img">
-            <hr />
-            <img class="desaturate" src="images/pictree.jpg" alt="one" />
-            <p class="content-img-text">
-              Since 1938, the character of Superman/Clark Kent has appeared in
-              every imaginable media form including television, film,
-              novelizations, and even a Broadway show.
-            </p>
-          </section>
-        </article>
-        <section>
-          <article class="release">
-            <h3>Release Date?</h3>
-            <p>https://www.imdb.com/title/tt0770828/</p>
-            <form>
-              <div>
-                <label for="email-input"></label><br />
-                <input
-                  id="email-input"
-                  type="email"
-                  name="email-inputted"
-                  placeholder="Enter your E-mail Adress here!"
-                  maxlength="255"
-                />
-              </div>
-            </form>
-          </article>
-        </section>
-      </main>
-    </div>
-    <footer>
-      Superman and all related items are copyright © by Warner Bros. and DC
-      Comics.
-    </footer>
-    <script src="scroll-out.js"></script>
-    <script type="text/javascript">
-      ScrollOut({
-        targets: '.top-bg , .navbar, .sticky',
-      });
-    </script>
+    <main>
+      <div class="container">
+        <div class="desc">
+          <h1>
+            I'm <span class="pink">available</span><span>for freelance.</span>
+          </h1>
+        </div>
+        <div class="desc-img"><img src="images/banner_bg.png" alt="" /></div>
+      </div>
+    </main>
+    <section>
+      <div class="desc-mail">
+        <p><i class="far fa-envelope"></i>EMAIL ME</p>
+        <h3>
+          <a href="mailto:someone@yoursite.com">bogdanbbc@freelance.com</a>
+        </h3>
+        <p class="lf-work">
+          Currently looking for projects! <br />
+          If you're interested in working with me, get in touch!
+        </p>
+      </div>
+    </section>
   </body>
 </html>
