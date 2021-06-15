@@ -33,10 +33,10 @@ h2::after {
 }
 
 .circle {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 5;
   background-color: #7ad7da;
   border: 1px solid rgb(41, 230, 255);
   background-attachment: fixed;
@@ -69,7 +69,7 @@ h1.pulse-white {
 
 .circle:hover {
   clip-path: circle(600px at 50% 50px);
-  background-color: #03336ee0;
+  background-color: #03336eee;
 }
 
 @keyframes pulse-blue {
@@ -113,33 +113,32 @@ nav h2 {
 
 nav {
   width: 100%;
+  padding: 50px 30px 0 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
-  z-index: 1000;
-  color: white;
-  padding: 30px;
 }
 
 nav ul {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(120px, 150px));
-  grid-gap: 20px;
+  display: flex;
   list-style: none;
   text-align: center;
-  margin: 20px;
+  gap: 20px;
 }
 
 nav ul li {
-  width: 100%;
+  min-width: 140px;
   padding: 20px 0 20px 0;
   text-align: center;
   background-color: #0cbab783;
   border-radius: 10px;
+  cursor: pointer;
+  color: white;
 }
 
 nav ul li a {
   display: block;
+  color: white;
 }
 
 .link {
@@ -151,6 +150,20 @@ nav ul li a {
 
 .link:hover {
   border: 1px solid rgb(41, 230, 255);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  text-shadow: 1px 1px 2px #427388;
+}
+
+.link-sub {
+  border: 1px solid rgb(41, 230, 255);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.link-sub:hover {
+  border: 1px solid #ffd70f;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
     0 0 20px rgba(255, 255, 255, 0.2);
   text-shadow: 1px 1px 2px #427388;
@@ -218,6 +231,65 @@ p.lf-work {
   margin-right: 5px;
 }
 
+.fa-angle-down {
+  margin-left: 5px;
+}
+
+li.drop-down ul {
+  flex-direction: column;
+  gap: 1px;
+}
+
+.drop-down {
+  position: relative;
+  color: white;
+  z-index: 3;
+}
+
+.sub-menu {
+  display: none;
+}
+
+.drop-down:hover .sub-menu {
+  display: block;
+  position: absolute;
+  top: 61px;
+  left: 0;
+}
+
+.drop-down:hover .sub-menu ul li:hover {
+  background-color: #ffd70fe0;
+}
+
+.content-circle {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 60px;
+  color: white;
+  position: relative;
+}
+
+.img-circle img {
+  width: 100%;
+}
+
+.img-circle {
+  margin-top: 140px;
+}
+.desc-circle {
+  position: absolute;
+  top: -100px;
+}
+
+.desc-circle p {
+  font-size: 2rem;
+}
+
+span.white {
+  font-size: 5rem;
+  font-weight: bolder;
+}
+
 /*social media*/
 
 .social-media {
@@ -269,4 +341,15 @@ p.lf-work {
 
 .social-media a:hover .fa-linkedin-in {
   color: #3b5998;
+}
+
+@media only screen and (max-width: 1300px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .drop-down:hover .sub-menu {
+    top: -1px;
+    left: 140px;
+  }
 }

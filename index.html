@@ -21,7 +21,19 @@
     <title>Animations</title>
   </head>
   <body>
-    <div class="circle"><p>welcome to the webpage</p></div>
+    <div class="circle">
+      <div class="content-circle">
+        <div class="desc-circle">
+          <p>
+            <span class="white">UX Designer:</span> <br />
+            simple and remarkable ideas <br />
+            for transforming interfaces <br />
+            and businesses.
+          </p>
+        </div>
+        <div class="img-circle"><img src="images/me.svg" alt="" /></div>
+      </div>
+    </div>
     <nav>
       <h2>bb</h2>
       <div class="social-media">
@@ -34,7 +46,16 @@
       <ul>
         <li class="link"><i class="fa fa-home"></i>Home</li>
         <li class="link"><i class="fa fa-user"></i>About Me</li>
-        <li class="link"><i class="fa fa-clone"></i>Services</li>
+        <li class="link drop-down">
+          <i class="fa fa-clone"></i>Services<i class="fa fa-angle-down"></i>
+          <div class="sub-menu fade">
+            <ul>
+              <li class="link-sub"><a href="">Web Design</a></li>
+              <li class="link-sub"><a href="">Marketing</a></li>
+              <li class="link-sub"><a href="">Mobile App</a></li>
+            </ul>
+          </div>
+        </li>
         <li class="link"><i class="fa fa-phone"></i>Contact</li>
       </ul>
     </nav>
