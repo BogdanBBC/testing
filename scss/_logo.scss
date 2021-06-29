@@ -1,0 +1,52 @@
+.section {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 20px;
+  z-index: 4;
+  text-shadow: 1px 1px 8px white;
+  left: 14px;
+}
+
+.floating-bg {
+  width: 100px;
+  height: 100px;
+  background-color: $primary-color;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 45%;
+  animation: rotate 15s infinite;
+}
+
+.floating-bg::before {
+  content: '';
+  width: 140%;
+  height: 140%;
+  background-color: rgba(50, 231, 255, 0.1);
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  border-radius: 40%;
+  animation: rotate 20s infinite;
+}
+
+.floating-bg::after {
+  content: '';
+  width: 120%;
+  height: 120%;
+  background-color: rgba(50, 231, 255, 0.3);
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  border-radius: 35%;
+  animation: rotate 30s infinite;
+}
