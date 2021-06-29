@@ -376,15 +376,23 @@ nav ul {
           transform: scale(0.9);
 }
 
-.social-media a:hover .fa-github {
+.social-media .social-media a:hover .fa-facebook {
+  color: #3b5998;
+}
+
+.social-media .social-media a:hover .fa-twitter {
+  color: #00acee;
+}
+
+.social-media .social-media a:hover .fa-github {
   color: #000000;
 }
 
-.social-media a:hover .fa-instagram {
+.social-media .social-media a:hover .fa-instagram {
   color: #f14843;
 }
 
-.social-media a:hover .fa-linkedin-in {
+.social-media .social-media a:hover .fa-linkedin-in {
   color: #3b5998;
 }
 
