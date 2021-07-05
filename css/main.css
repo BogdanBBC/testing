@@ -193,8 +193,7 @@ body::before {
   height: 100%;
   background-image: url(../images/bg2.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
+  background-position: center;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transition: 2s all;
@@ -761,10 +760,8 @@ nav ul {
 .section-4-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1.25rem;
 }
 
@@ -831,4 +828,87 @@ nav ul {
 
 .footer-para {
   font-size: 1.3rem;
+}
+
+@media (max-width: 950px) {
+  .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .section {
+    display: none;
+  }
+  .navbar {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1550px) {
+  .footer-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-media a {
+    margin: 1px;
+  }
+  .contact-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  .section-2-heading {
+    font-size: 7rem;
+  }
+  nav ul {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar {
+    margin-left: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section {
+    display: none;
+  }
+  .subscribe {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .contact-right {
+    padding: 10px;
+  }
+  .section-2-heading2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
 }
