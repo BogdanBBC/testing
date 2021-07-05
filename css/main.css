@@ -851,6 +851,9 @@ nav ul {
     width: 100%;
     margin-left: 0;
   }
+  .section-1 {
+    position: relative;
+  }
 }
 
 @media (max-width: 1550px) {
