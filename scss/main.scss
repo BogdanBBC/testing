@@ -19,7 +19,8 @@ body::before {
   height: 100%;
   background-image: url(../images/bg2.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
+  background-attachment: fixed;
   filter: grayscale(100%);
   transition: 2s all;
   z-index: -1;
